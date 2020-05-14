@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sending Sms Using Twilio</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="column column-50 column-offset-25 ">
+            <h2>
+                Sending Sms Using Twilio
+            </h2>
+            <p>
+                Please make sure You check you Api setting at sendsms.php
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column column-50 column-offset-25 ">
+
+            <form action="sendmsms.php" method="post">
+                <fieldset>
+                    <label for="phone">Receiver Phone</label>
+                    <input type="text" placeholder="Enter a phone number. Ex:+88 01711 22 33 11" id="phone" name="phone" required>
+                    <label for="message">Body Message</label>
+                    <textarea placeholder="Please keep it below 160 character" id="message" name="message" required></textarea>
+                    <input class="button-primary" type="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
